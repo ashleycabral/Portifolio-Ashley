@@ -3,7 +3,6 @@ export const Bio = {
     roles: [
       "Software Developer",
       "FrontEnd Developer",
-      
     ],
     description:
     "Sou uma Desenvolvedora, atualmente cursando Engenharia de Software e Análise e Desenvolvimento de Sistemas. Tenho buscado experiência tanto por meio de oportunidades profissionais quanto em projetos pessoais. E sou apaixonada em aplicar minhas habilidades para resolver problemas, criar interfaces incríveis e garantir uma experiência excepcional para os usuários.",
@@ -156,8 +155,8 @@ export const Bio = {
         "Bootstrap",
       ],
       category: "web app",
-      github: "https://github.com/rishavchanda/Trackify",
-      webapp: "https://trackify.duckdns.org",
+      github: "https://github.com/ashleycabral/techture",
+      webapp: "https://techture.vercel.app",
     },
     {
       id: 0,
@@ -169,8 +168,8 @@ export const Bio = {
         "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/projeto2.png?alt=media&token=215c40c7-865a-4046-a2cd-13dffe297334",
       tags: ["HTML", "CSS"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Podstream",
-      webapp: "https://podstream.netlify.app/",
+      github: "https://github.com/ashleycabral/Login-Netflix",
+      webapp: "https://github.com/ashleycabral/Login-Netflix",
     },
     {
       id: 1,
@@ -185,8 +184,8 @@ export const Bio = {
         "CSS",
       ],
       category: "android app",
-      github: "https://github.com/rishavchanda/Project-Management-App",
-      webapp: "https://vexa-app.netlify.app/",
+      github: "https://github.com/ashleycabral/Landing-page",
+      webapp: "https://ashleycabral.github.io/Landing-page/",
     },
     {
       id: 2,
@@ -198,8 +197,8 @@ export const Bio = {
         "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/projeto4.png?alt=media&token=2a7417cd-bd3c-433f-b114-7dfbc6dbab21",
       tags: ["HTML", "CSS", "Javascript"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-      webapp: "https://brain-tumor.netlify.app/",
+      github: "https://github.com/ashleycabral/Projeto-clone-do-insta",
+      webapp: "https://github.com/ashleycabral/Projeto-clone-do-insta",
 
     },
     {
@@ -212,8 +211,8 @@ export const Bio = {
         "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/projeto5.png?alt=media&token=66fc06e4-3d12-419e-b5ad-80eeefe0aadf",
       tags: ["HTML", "CSS", "Javascript", "Bootstrap"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Buckoid-Android-App",
-      webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+      github: "https://github.com/ashleycabral/Boa-viagem",
+      webapp: "https://boaviagemfuneraria.vercel.app/",
     },
   ];
   
