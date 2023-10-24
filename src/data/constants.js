@@ -3,7 +3,7 @@ export const Bio = {
     roles: [
       "Software Developer",
       "FrontEnd Developer",
-      "UI/UX Designer", 
+      
     ],
     description:
     "Sou uma Desenvolvedora, atualmente cursando Engenharia de Software e Análise e Desenvolvimento de Sistemas. Tenho buscado experiência tanto por meio de oportunidades profissionais quanto em projetos pessoais. E sou apaixonada em aplicar minhas habilidades para resolver problemas, criar interfaces incríveis e garantir uma experiência excepcional para os usuários.",
