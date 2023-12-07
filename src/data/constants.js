@@ -214,6 +214,33 @@ export const Bio = {
       github: "https://github.com/ashleycabral/Boa-viagem",
       webapp: "https://boaviagemfuneraria.vercel.app/",
     },
+
+    {
+      id: 4,
+      title: "Login Form",
+      date: "Dez 2023 - Dez 2023",
+      description:
+        "Essa é uma página de login com formulário, que foi desenvolvido para treinar minhas habilidades em HTML e CSS",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/print.png?alt=media&token=8d595de8-ddd7-4f76-b0a8-83d00bc0b394",
+      tags: ["HTML", "CSS"],
+      category: "android app",
+      github: "https://github.com/ashleycabral/login-animation/tree/master",
+      webapp: "https://login-animation-mu.vercel.app/#",
+    },
+    {
+      id: 5,
+      title: "Meu portifólio",
+      date: "Out 2023 - Dez 2023",
+      description:
+        "Esse é o meu portifólio que foi desenvolvido com ReactJs",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/imagem_2023-12-06_231756646.png?alt=media&token=461aa40f-361f-4060-bae1-62567f869d05",
+      tags: ["ReactJs"],
+      category: "web app",
+      github: "https://github.com/ashleycabral/Portifolio-Ashley",
+      webapp: "https://portifolio-ashley.vercel.app",
+    },
   ];
   
   
