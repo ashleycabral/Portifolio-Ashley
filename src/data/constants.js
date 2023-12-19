@@ -241,6 +241,19 @@ export const Bio = {
       github: "https://github.com/ashleycabral/Portifolio-Ashley",
       webapp: "https://portifolio-ashley.vercel.app",
     },
+    {
+      id: 6,
+      title: "Login Page",
+      date: "Dez 2023 - Dez 2023",
+      description:
+        "Essa é uma landing page de login",
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/imagem_2023-12-19_183048310.png?alt=media&token=4e6063cf-f4f1-4ee5-ae9d-63de4569065e",
+      tags: ["HTML","CSS","Javascript"],
+      category: "android app",
+      github: "https://github.com/ashleycabral/Login-Page",
+      webapp: "https://login-page-self-eight.vercel.app",
+    },
   ];
   
   
