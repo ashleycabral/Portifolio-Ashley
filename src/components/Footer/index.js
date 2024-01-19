@@ -101,7 +101,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Ashley Cabral. Todos os direitos reservados.
+          &copy;2024 Ashley Cabral. Todos os direitos reservados.
         </Copyright>
 
       </FooterWrapper>

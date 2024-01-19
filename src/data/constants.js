@@ -113,8 +113,17 @@ export const Bio = {
       img: "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/maxion-wheels-logo.png?alt=media&token=7fcbb6e5-fcab-47a1-8aa7-d28dbc23fb21",
       role: "Estágio em Análise de Sistemas",
       company: "Maxion Wheels",
-      date: "Fev 2023 - Até momento",
+      date: "Fev 2023 - Jan 2024",
       desc: "Minhas atribuições abrangem consultas em linguagem SQL, resolução de problemas do sistema e fornecimento de suporte aos usuários. Além disso, estou envolvida na análise e otimização de bancos de dados.",
+    },
+
+    {
+      id: 1,
+      img: "https://firebasestorage.googleapis.com/v0/b/portifolio-ashleycabral.appspot.com/o/logo-vr.jpg?alt=media&token=9a80314d-187a-4a80-b5d9-84a3ce93f272",
+      role: "Estágio em Desenvolvimento",
+      company: "VR Software",
+      date: "Jan 2024 - até o momento",
+      desc: "Minhas atribuições abrangem escrever e revisar códigos e testes, desenvolver documentações técnica e implementar funcionalidades, depurar erros e manter a segurança do sistema. Colaboro com a equipe para entender os requisitos do projeto, participo do desenvolvimento de recursos simples.",
     }
   ];
   
