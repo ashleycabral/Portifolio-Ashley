@@ -1,176 +1,158 @@
-
-import React from 'react'
-import styled from 'styled-components'
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { Snackbar } from '@mui/material';
-
+import React from "react";
+import styled from "styled-components";
+import { MdOutlineEmail } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa6";
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: 1;
-align-items: center;
-@media (max-width: 960px) {
-    padding: 0px;
-}
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+`;
 
 const Wrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-width: 100%;
-max-width: 1350px;
-padding: 0px 0px 80px 0px;
-gap: 12px;
-@media (max-width: 960px) {
-    flex-direction: column;
-}
-`
-
-const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
-
-
-const ContactForm = styled.form`
-  width: 95%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.card};
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  margin-top: 28px;
-  gap: 12px;
-`
+  align-items: center;
+`;
 
-const ContactTitle = styled.div`
-  font-size: 24px;
-  margin-bottom: 6px;
-  font-weight: 600;
+const Title = styled.h2`
+  font-size: 42px;
+  font-weight: 700;
   color: ${({ theme }) => theme.text_primary};
-`
+  margin-bottom: 16px;
 
-const ContactInput = styled.input`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
+  @media (max-width: 768px) {
+    font-size: 34px;
   }
-`
+`;
 
-const ContactInputMessage = styled.textarea`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
+const Desc = styled.p`
   font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`
-
-const ContactButton = styled.input`
-  width: 100%;
-  text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  padding: 13px 16px;
-  margin-top: 2px;
-  border-radius: 12px;
-  border: none;
+  color: ${({ theme }) => theme.text_secondary};
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`;
+
+const ContactCard = styled.div`
+  width: 100%;
+  max-width: 550px;
+  background: ${({ theme }) => theme.card};
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: rgba(23, 92, 230, 0.12) 0px 8px 30px;
+`;
+
+const ContactItem = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
   color: ${({ theme }) => theme.text_primary};
+
+  &:hover {
+    background: ${({ theme }) => theme.primary}15;
+    transform: translateY(-4px);
+  }
+`;
+
+const IconBox = styled.div`
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: 14px;
+  background: ${({ theme }) => theme.primary}20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ${({ theme }) => theme.primary};
+  font-size: 28px;
+`;
+
+const ContactInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Label = styled.span`
+  font-size: 14px;
+  color: ${({ theme }) => theme.text_secondary};
+  margin-bottom: 4px;
+`;
+
+const Value = styled.span`
   font-size: 18px;
-  font-weight: 600;
-`
-
-
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_primary};
+`;
 
 const Contact = () => {
-
-  //hooks
-  const [open, setOpen] = React.useState(false);
-  const form = useRef();
-  
-  
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-
-    emailjs.sendForm('service_w43ul77', 'template_ykym6p9', form.current, 'rMqtePW9x58zFcc-Y')
-      .then((result) => {
-          console.log(result.text);
-          setOpen(true);
-          form.current.reset();
-      }, (error) => {
-        console.error('Erro ao enviar o e-mail: ',error.text);
-      });
-  }
-
-
-
   return (
-    <Container>
+    <Container id="Contato">
       <Wrapper>
-        <Title>Contate - me</Title>
-        <Desc>Sinta-se à vontade para entrar em contato comigo em caso de dúvidas ou oportunidades!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Me envie um e-mail 🚀</ContactTitle>
-          <ContactInput placeholder="Seu Email" name="from-email" />
-          <ContactInput placeholder="Seu Nome" name="from-name" />
-          <ContactInput placeholder="Assunto" name="subject" />
-          <ContactInputMessage placeholder="Mensagem" rows="4" name="message" />
-          <ContactButton type="submit" value="Enviar" />
-        </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
-          message="Email enviado com sucesso!"
-          variant="success"
-        />
+        <Title>Contato</Title>
+
+        <Desc>
+          Estou disponível para novas oportunidades. Se quiser conversar sobre projetos, vagas ou parcerias,
+          entre em contato por um dos canais abaixo.
+        </Desc>
+
+        <ContactCard>
+          <ContactItem href="mailto:ashleycabral1806@gmail.com">
+            <IconBox>
+              <MdOutlineEmail />
+            </IconBox>
+
+            <ContactInfo>
+              <Label>E-mail</Label>
+              <Value>ashleycabral1806@gmail.com</Value>
+            </ContactInfo>
+          </ContactItem>
+
+          <ContactItem href="tel:+5519996992527">
+            <IconBox>
+              <FiPhone />
+            </IconBox>
+
+            <ContactInfo>
+              <Label>Telefone</Label>
+              <Value>(19) 99699-2527</Value>
+            </ContactInfo>
+          </ContactItem>
+
+          <ContactItem
+            href="https://www.linkedin.com/in/ashley-cabral"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBox>
+              <FaLinkedin />
+            </IconBox>
+
+            <ContactInfo>
+              <Label>LinkedIn</Label>
+              <Value>linkedin.com/in/ashley-cabral</Value>
+            </ContactInfo>
+          </ContactItem>
+        </ContactCard>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

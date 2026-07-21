@@ -1,11 +1,11 @@
 export const Bio = {
     name: "Ashley Cabral",
     roles: [
-      "Software Developer",
-      "FrontEnd Developer",
+      "Desenvolvedora Web",
+      "Web Developer",
     ],
     description:
-    "Sou Desenvolvedora Front-end com cerca de 2 anos de experiência no desenvolvimento de aplicações web utilizando Angular, TypeScript e tecnologias modernas. Sou formada em Engenharia de Software e Análise e Desenvolvimento de Sistemas, com atuação na criação de interfaces responsivas, integração com APIs e implementação de soluções focadas em desempenho e experiência do usuário. Tenho paixão por tecnologia e por transformar desafios em soluções práticas e eficientes.",
+    "Sou Desenvolvedora Web com cerca de 2 anos de experiência no desenvolvimento de aplicações web utilizando Angular, TypeScript e tecnologias modernas. Sou formada em Engenharia de Software e Análise e Desenvolvimento de Sistemas, com atuação na criação de interfaces responsivas, integração e criação de APIs e implementação de soluções focadas em desempenho e experiência do usuário. Tenho paixão por tecnologia e por transformar desafios em soluções práticas e eficientes.",
     github: "https://github.com/ashleycabral",
     resume: "/assets/Curriculo-Ashley.pdf",
     linkedin: "https://www.linkedin.com/in/ashley-cabral",
@@ -56,10 +56,17 @@ export const Bio = {
             "https://skillicons.dev/icons?i=bootstrap",
         },
           {
+          name: "TailwindCSS",
+          image:
+            "https://skillicons.dev/icons?i=tailwind",
+        },
+        
+          {
           name: "Angular Material",
           image:
             "https://skillicons.dev/icons?i=angular",
         },
+        
       ],
     },
     {
@@ -125,17 +132,17 @@ export const Bio = {
      {
       id: 0,
       img:  "/images/logo-vr.jfif",
-      role: "Desenvolvedora Frontend Jr",
+      role: "Desenvolvedora Web Jr",
       company: "VR Software",
       date: "Abr 2025 - Mai 2026",
-      desc: "Atuação no desenvolvimento e evolução de aplicações web utilizando Angular e TypeScript. Implementação de funcionalidades end-to-end com integração de APIs REST, desenvolvimento de interfaces responsivas e acessíveis seguindo diretrizes WCAG e atuação com Angular Material, Bootstrap e Design System interno. Responsável pela correção de bugs, melhorias funcionais e otimização de performance, aplicando boas práticas como Clean Code e organização de código. Experiência com testes automatizados utilizando Jest e Jasmine e participação em squads ágeis seguindo a metodologia Scrum."    },
+      desc: "Atuação no desenvolvimento e evolução de aplicações web utilizando Angular, React, TypeScript, TailwindCSS, SCSS, Node.js, NestJs, PostgreSQL. Implementação de funcionalidades end-to-end com criaçao de APIs REST, desenvolvimento de interfaces responsivas e acessíveis seguindo diretrizes WCAG e atuação com Angular Material, Bootstrap e Design System interno. Responsável pela correção de bugs, melhorias funcionais e otimização de performance, aplicando boas práticas como Clean Code, SOLID e organização de código. Experiência com testes automatizados utilizando Jest e Jasmine e participação em squads ágeis seguindo a metodologia Scrum."    },
     {
       id: 1,
       img:  "/images/logo-vr.jfif",
       role: "Estágio em Desenvolvimento Web",
       company: "VR Software",
       date: "Jan 2024 - Abr 2025",
-      desc: "Atuação no suporte e manutenção de sistemas corporativos, realizando análise e resolução de chamados, identificação e correção de problemas e atendimento aos usuários. Experiência com consultas e manipulação de dados utilizando SQL, análise de requisitos e apoio na melhoria de processos internos. Participação em atividades de documentação técnica, testes de funcionalidades e suporte às equipes de desenvolvimento e negócio."    },
+      desc: "Atuação no desenvolvimento e evolução de aplicações web utilizando Angular, React, TypeScript, TailwindCSS, SCSS, Node.js, NestJs, PostgreSQL. Implementação de funcionalidades, desenvolvimento de interfaces responsivas e acessíveis seguindo diretrizes WCAG e atuação com Angular Material, Bootstrap e Design System interno. Responsável pelas melhorias funcionais e otimização de performance, aplicando boas práticas como Clean Code, SOLID e organização de código. Experiência com testes automatizados utilizando Jest e Jasmine e participação em squads ágeis seguindo a metodologia Scrum."    },
     {
       id: 2,
       img: "/images/logo-maxion.png",
@@ -143,6 +150,14 @@ export const Bio = {
       company: "Maxion Wheels",
       date: "Fev 2023 - Jan 2024",
       desc: "Minhas atribuições abrangem consultas em linguagem SQL, resolução de problemas do sistema e fornecimento de suporte aos usuários. Além disso, estou envolvida na análise e otimização de bancos de dados.",
+    },
+        {
+      id: 3,
+      img: "/images/logo-maxion.png",
+      role: "Educadora Voluntária de TI",
+      company: "Iochpe Maxion - Formare",
+      date: "Fev 2023 - Jan 2024",
+      desc: "Atuei como educadora voluntária no programa Formare, ministrando aulas de informática básica para jovens em situação de vulnerabilidade social. Durante esse período, desenvolvi habilidades de comunicação, paciência e empatia, além de contribuir para a inclusão digital e o desenvolvimento pessoal dos alunos.",
     },
 
   
@@ -184,6 +199,18 @@ export const Bio = {
     },
     {
       id: 1,
+      title: "Thinko",
+      date: "Dez 2025 - Jun 2026",
+      description:
+        "Essa é uma plataforma gamificada de aprendizado de conteúdos do ensino médio, que foi desenvolvida com Angular e NestJs. O projeto foi desenvolvido como parte do meu trabalho de conclusão de curso (TCC) e tem como objetivo tornar o aprendizado mais envolvente e interativo para os estudantes.",
+      image: "images/projeto-12.png",
+      tags: ["HTML","CSS","Typescript","Angular","NestJs", "PostgreSQL", "TailwindCSS", "Docker"],
+      category: "web app",
+      github: "/",
+      webapp: "https://thinko-three.vercel.app/",
+    },
+    {
+      id: 2,
       title: "Login Page",
       date: "Dez 2023 - Dez 2023",
       description:
@@ -195,7 +222,7 @@ export const Bio = {
       webapp: "https://login-page-self-eight.vercel.app",
     },
     {
-      id: 2,
+      id: 3,
       title: "Portifólio Techture",
       date: "Ago 2022 - Set 2022",
       description:
@@ -212,7 +239,7 @@ export const Bio = {
       webapp: "https://techture.vercel.app",
     },
     {
-      id: 3,
+      id: 4,
       title: "Clone Netflix",
       date: "Dez 2022 - Dez 2022",
       description:
@@ -225,7 +252,7 @@ export const Bio = {
     },
   
     {
-      id: 4,
+      id: 5,
       title: "Clone Instagram",
       date: "Mar 2022 - Mar 2022",
       description:
@@ -238,7 +265,7 @@ export const Bio = {
 
     },
     {
-      id: 5,
+      id: 6,
       title: "Portifóilio Boa Viagem",
       date: "Abr 2023 - Abr 2023",
       description:
@@ -251,7 +278,7 @@ export const Bio = {
     },
 
     {
-      id: 6,
+      id: 7,
       title: "Login Form",
       date: "Dez 2023 - Dez 2023",
       description:
@@ -264,7 +291,7 @@ export const Bio = {
     },
 
       {
-      id: 7,
+      id: 8,
       title: "Marketing Criativo",
       date: "fev 2022 - fev 2022",
       description:
