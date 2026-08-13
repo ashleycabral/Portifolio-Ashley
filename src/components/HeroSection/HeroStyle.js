@@ -168,16 +168,26 @@ export const BadgeDot = styled.span`
 
 export const ImageRing = styled.div`
   position: relative;
-  width: fit-content;
+  width: 380px;
+  height: 380px;
+  flex-shrink: 0;
+
   &::before {
     content: '';
     position: absolute;
     inset: -10px;
     border-radius: 50%;
-    background: conic-gradient(from 0deg, ${({ theme }) => theme.primary}, #c084fc, #61dafb, ${({ theme }) => theme.primary});
+    background: conic-gradient(
+      from 0deg,
+      ${({ theme }) => theme.primary},
+      #c084fc,
+      #61dafb,
+      ${({ theme }) => theme.primary}
+    );
     animation: spin-slow 8s linear infinite;
     z-index: 0;
   }
+
   &::after {
     content: '';
     position: absolute;
@@ -186,17 +196,26 @@ export const ImageRing = styled.div`
     background: ${({ theme }) => theme.card_light};
     z-index: 0;
   }
+
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 280px;
+  }
+
+  @media (max-width: 640px) {
+    width: 230px;
+    height: 230px;
+  }
 `;
 
 export const Img = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 380px;
-  max-height: 380px;
   border-radius: 50%;
   z-index: 1;
   object-fit: cover;
+  display: block;
 
   @media (max-width: 768px) {
     max-width: 280px;
