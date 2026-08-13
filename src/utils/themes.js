@@ -1,0 +1,31 @@
+export const darkTheme = {
+    mode: "dark",
+    bg:"#1C1C27",
+    bgLight: "#1C1E27",
+    primary:"#854CE6",
+    primaryLight: "#a67ef0",
+    text_primary:"#F2F3F4",
+    text_secondary:"#b1b2b3",
+    card:"#171721",
+    card_light: '#191924',
+    button:"#854CE6",
+    white:"#FFFFFF",
+    black:"#000000",
+    shadow: "rgba(0, 0, 0, 0.4)",
+}
+
+export const lightTheme = {
+    mode: "light",
+    bg:"#F7F5FC",
+    bgLight: "#EFEAFB",
+    primary:"#7C3AED",
+    primaryLight: "#a67ef0",
+    text_primary:"#181828",
+    text_secondary:"#54525c",
+    card:"#FFFFFF",
+    card_light: "#F1EDFB",
+    button:"#7C3AED",
+    white:"#FFFFFF",
+    black:"#000000",
+    shadow: "rgba(124, 58, 237, 0.12)",
+}
